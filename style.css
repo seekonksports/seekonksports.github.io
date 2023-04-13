@@ -6,7 +6,7 @@ body {
 
 header {
   background-color: #333;
-  color: #fff;
+  color: #8abeff;
   padding: 20px;
 }
 
@@ -22,7 +22,7 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: #8abeff;
   text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ section p {
 
 footer {
   background-color: #333;
-  color: #fff;
+  color: #8abeff;
   padding: 20px;
   text-align: center;
 }
