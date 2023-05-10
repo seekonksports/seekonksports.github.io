@@ -23,6 +23,7 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            display: inline-block;
             }
             .navbar b {
             float: left;
@@ -31,6 +32,10 @@
             text-align: center;
             padding: 14px 16px;
             text-decoration: underline #fff;
+            }
+            .nav-container {
+            overflow-x: auto;
+            white-space: nowrap;
             }
             .dropdown {
             float: left;
@@ -84,19 +89,21 @@
     <body>
         <div class="navbar">
             <b>Seekonk Sports Hub</b>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About Us</a>
-            <div class="dropdown">
-                <button class="dropbtn">Football
-                <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="./footballSchedule.html">Schedule</a>
-                    <a href="./footballStats.html">Stats</a>
-                    <a href="./footballRoster.html">Roster</a>
+            <div class="nav-container">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Football
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./footballSchedule.html">Schedule</a>
+                        <a href="./footballStats.html">Stats</a>
+                        <a href="./footballRoster.html">Roster</a>
+                    </div>
                 </div>
+                <a href="https://github.com/seekonksports/seekonksports.github.io" target="_blank">&lt;/&gt;</a>
             </div>
-            <a href="https://github.com/seekonksports/seekonksports.github.io" target="_blank">&lt;/&gt;</a>
         </div>
         <main>
             <article>
