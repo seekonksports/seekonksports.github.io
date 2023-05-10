@@ -8,109 +8,81 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             body {
-                font-family: Arial, Helvetica, sans-serif;
-                background-color: #b4ccfa;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #b4ccfa;
             }
-            
             .navbar {
-                overflow: hidden;
-                background-color: #0f014f;
-                border-radius: 10px;
+            overflow: hidden;
+            background-color: #0f014f;
+            border-radius: 10px;
             }
-            
             .navbar a {
-                font-size: 16px;
-                color: white;
-                text-align: center;
-                text-decoration: none;
-                padding: 14px 16px;
-                display: inline-block;
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: inline-block;
             }
-            
             .navbar b {
-                font-size: 18px;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: underline #fff;
-                display: inline-block;
+            float: left;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline #fff;
             }
-            
             .nav-container {
-                overflow-x: auto;
-                white-space: nowrap;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
+            overflow-x: auto;
+            white-space: nowrap;
             }
-            
             .dropdown {
-                position: relative;
-                display: inline-block;
-                margin-left: 10px;
+            float: left;
+            overflow: hidden;
             }
-            
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: #4025b8;
-                min-width: 160px;
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                z-index: 1;
-            }
-            
-            .dropdown-content a {
-                color: white;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-                text-align: left;
-            }
-            
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            
             footer {
-                background-color: #0f014f;
-                color: #fff;
-                font-size: 16px;
-                padding: 10px;
-                text-align: center;
-                border-radius: 10px;
-                margin-top: 20px;
+            background-color: #0f014f;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
             }
-            
-            @media only screen and (max-width: 768px) {
-                .navbar {
-                    text-align: center;
-                }
-                
-                .navbar b {
-                    display: block;
-                }
-                
-                .navbar a, .navbar b {
-                    padding: 10px;
-                }
-                
-                .nav-container {
-                    display: block;
-                }
-                
-                .dropdown {
-                    margin: 10px 0;
-                }
-                
-                .dropdown-content {
-                    position: static;
-                    display: block;
-                    box-shadow: none;
-                }
-                
-                .dropdown:hover .dropdown-content {
-                    display: none;
-                }
+            .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            }
+            .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #4d2fd4;
+            }
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4025b8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+            .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+            .dropdown-content a:hover {
+            background-color: #0f014f;
+            }
+            .dropdown:hover .dropdown-content {
+            display: block;
             }
         </style>
     </head>
@@ -125,7 +97,7 @@
                     <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                                               <a href="./footballSchedule.html">Schedule</a>
+                        <a href="./footballSchedule.html">Schedule</a>
                         <a href="./footballStats.html">Stats</a>
                         <a href="./footballRoster.html">Roster</a>
                     </div>
