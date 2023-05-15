@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seekonk Sports Hub</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+            font-family: "Assistant", Arial, Helvetica, sans-serif;
+            background-color: #b4ccfa;
+            padding: 8px 10px;
+            }
+            .navbar {
+            overflow: hidden;
+            background-color: #0f014f;
+            border-radius: 10px;
+            }
+            .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            display: inline-block;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            }
+            .navbar b {
+            float: left;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: underline #fff;
+            }
+            .nav-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            }
+            .dropdown {
+            float: left;
+            overflow: hidden;
+            }
+            footer {
+            background-color: #0f014f;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+            }
+            .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            }
+            .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #4d2fd4;
+            }
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #4025b8;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            }
+            .dropdown-content a {
+            float: none;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+            .dropdown-content a:hover {
+            background-color: #0f014f;
+            }
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+            .schedule-section {
+            text-align: center;
+            }
+            .schedule-section table {
+            margin: 0 auto;
+            }
+            .schedule-section th,
+            .schedule-section td {
+            padding: 8px 16px;
+            }
+            .schedule-section th {
+            background-color: #0f014f;
+            color: white;
+            }
+            .schedule-section tr:nth-child(even) {
+            background-color: #f2f2f2;
+            }
+            .schedule-section a {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            }
+        </style>
+        <script>
+            // JavaScript code to close dropdown on click
+            document.addEventListener("DOMContentLoaded", function() {
+                var dropdowns = document.getElementsByClassName("dropdown");
+            
+                for (var i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.getElementsByClassName("dropdown-content")[0];
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="navbar">
+            <b>Seekonk Sports Hub</b>
+            <div class="nav-container">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Football
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./footballSchedule.html">Schedule</a>
+                        <a href="./footballStats.html">Stats</a>
+                        <a href="./footballRoster.html">Roster</a>
+                    </div>
+                </div>
+                <a href="https://github.com/seekonksports/seekonksports.github.io" target="_blank">&lt;/&gt;</a>
+            </div>
+        </div>
+        <main>
+            <div class="schedule-section">
+                <h2>Upcoming Games</h2>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Sport</th>
+                        <th>Opponent</th>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>time</td>
+                        <td>Football</td>
+                        <td>location</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>time</td>
+                        <td>Football</td>
+                        <td>location</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>time</td>
+                        <td>Football</td>
+                        <td>location</td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>time</td>
+                        <td>Football</td>
+                        <td>location</td>
+                    </tr>
+                </table>
+                <a href="./footballSchedule.html">View the Full Schedule Here &rarr;</a>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 Seekonk Sports</p>
+        </footer>
+    </body>
+</html>
