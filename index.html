@@ -87,38 +87,33 @@
             display: block;
             }
             .schedule-section {
-        text-align: center;
-    }
-
-    .schedule-section table {
-        margin: 0 auto;
-    }
-
-    .schedule-section th,
-    .schedule-section td {
-        padding: 8px 16px;
-    }
-
-    .schedule-section th {
-        background-color: #0f014f;
-        color: white;
-    }
-
-    .schedule-section tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-
-    .schedule-section a {
-        display: block;
-        margin-top: 10px;
-        text-align: center;
-    }
+            text-align: center;
+            }
+            .schedule-section table {
+            margin: 0 auto;
+            }
+            .schedule-section th,
+            .schedule-section td {
+            padding: 8px 16px;
+            }
+            .schedule-section th {
+            background-color: #0f014f;
+            color: white;
+            }
+            .schedule-section tr:nth-child(even) {
+            background-color: #f2f2f2;
+            }
+            .schedule-section a {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            }
         </style>
         <script>
             // JavaScript code to close dropdown on click
             document.addEventListener("DOMContentLoaded", function() {
                 var dropdowns = document.getElementsByClassName("dropdown");
-
+            
                 for (var i = 0; i < dropdowns.length; i++) {
                     dropdowns[i].addEventListener("click", function() {
                         this.classList.toggle("active");
@@ -153,66 +148,63 @@
             </div>
         </div>
         <main>
-    <div class="banner">
-        <img src="banner.jpg" alt="Seekonk Sports Hub Banner">
-    </div>
-    <div class="news-section">
-        <h2>Latest News</h2>
-        <div class="news-item">
-            <img src="news1.jpg" alt="News Image">
-            <div class="news-text">
-                <h3>Article Title</h3>
-                <p>Article Content</p>
-                <a href="./footballNews.html">Read More &rarr;</a>
+            <div class="banner">
+                <img src="banner.jpg" alt="Seekonk Sports Hub Banner">
             </div>
-        </div>
-        <div class="news-item">
-            <img src="news2.jpg" alt="News Image">
-            <div class="news-text">
-                <h3>Article Title</h3>
-                <p>Article Content</p>
-                <a href="./basketballNews.html">Read More &rarr;</a>
+            <div class="news-section">
+                <h2>Latest News</h2>
+                <div class="news-item">
+                    <img src="news1.jpg" alt="News Image">
+                    <div class="news-text">
+                        <h3>Article Title</h3>
+                        <p>Article Content</p>
+                        <a href="./footballNews.html">Read More &rarr;</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="news2.jpg" alt="News Image">
+                    <div class="news-text">
+                        <h3>Article Title</h3>
+                        <p>Article Content</p>
+                        <a href="./basketballNews.html">Read More &rarr;</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="schedule-section">
-        <h2>Upcoming Games</h2>
-        <table>
-            <tr>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Sport</th>
-                <th>Opponent</th>
-            </tr>
-            <tr>
-                <td>date</td>
-                <td>time</td>
-                <td>Football</td>
-                <td>location</td>
-            </tr>
-            <tr>
-                <td>date</td>
-                <td>time</td>
-                <td>Football</td>
-                <td>location</td>
-            </tr>
-            <tr>
-                <td>date</td>
-                <td>time</td>
-                <td>Football</td>
-                <td>location</td>
-            </tr>
-            <tr>
-                <td>date</td>
-                <td>time</td>
-                <td>Football</td>
-                <td>location</td>
-            </tr>
-        </table>
-        <a href="./footballSchedule.html">View the Full Schedule Here &rarr;</a>
-    </div>
-</main>
-
+            <div class="schedule-section">
+                <h2>Upcoming Games</h2>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Sport</th>
+                        <th>Location</th>
+                        <th>Opponent</th>
+                    </tr>
+                    <tr>
+                        <td>Sep 08</td>
+                        <td>6:30 PM</td>
+                        <td>Football</td>
+                        <td>Seekonk, MA</td>
+                        <td>Rockland Bulldogs</td>
+                    </tr>
+                    <tr>
+                        <td>Sep 15</td>
+                        <td>6:30 PM</td>
+                        <td>Football</td>
+                        <td>Seekonk, MA</td>
+                        <td>Diman Bengals</td>
+                    </tr>
+                    <tr>
+                        <td>Sep 22</td>
+                        <td>4:30 PM</td>
+                        <td>Football</td>
+                        <td>Lakeville, MA</td>
+                        <td>Apponequet Lakers</td>
+                    </tr>
+                </table>
+                <a href="./footballSchedule.html">View the Full Schedule Here &rarr;</a>
+            </div>
+        </main>
         <footer>
             <p>&copy; 2023 Seekonk Sports</p>
         </footer>
